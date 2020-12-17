@@ -130,7 +130,7 @@ public class BlackJack {
                 end();
             }
         } else if(computerScore > 21) {
-            System.out.println("The computer has gone over 21 so you have won this round.");
+            System.out.println("The computer has gone over 21 so you have won this round. Congragulations!");
             chips += wager;
         } else if (computerScore == playerScore && playerScore <= 21) {
             System.out.println("You have tied with the computer this round.");
@@ -175,7 +175,7 @@ public class BlackJack {
     }
     private void end() {
         if (chips <= 0) {
-            System.out.println("You ran out of chips and unfortunately lost.");
+            System.out.println("You ran out of chips and unfortunately lost. You'll Get Em Next Time!");
         } else {
             System.out.println("You ended up with " + chips + " chips. Good job!");
         }
