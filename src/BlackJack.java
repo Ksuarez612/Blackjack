@@ -1,7 +1,6 @@
 import java.util.*;
 
 public class BlackJack {
-
     private final String[] SUITS = { "C", "D", "H", "S" };
     private final String[] RANKS = { "A", "2", "3", "4", "5", "6", "7", "8", "9", "T", "J", "Q", "K" };
 
@@ -149,7 +148,7 @@ public class BlackJack {
         do {
             System.out.println("Would you like to end the game here (E) or keep playing (P)");
             answer = in.nextLine().toUpperCase();
-        } while (answer.equals("E") == false && answer.equals("C") == false);
+        } while (answer.equals("E") == false && answer.equals("P") == false);
         if (answer.equals("E")) {
             end();
         } else {
